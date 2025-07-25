@@ -1,0 +1,82 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 2rem;
+  background-color: #ffe042e6; /* Bright orange */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  border: 2px solid black;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.navbar-logo img {
+  height: 50px;
+  width: 50px;
+  object-fit: contain;
+}
+
+.navbar-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: teal;
+  font-weight: bolder;
+  font-size: 16px; /* Adjust font size */
+  transition: color 0.3s ease;
+}
+
+.navbar-links.active {
+  display: flex;
+}
+
+.navbar-links a:hover {
+  color: #ff6b6b;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: flex;
+}
+
+.dropdown-menu a {
+  color: #333;
+}
+
+.dropdown-menu a:hover {
+  color: #ff6b6b;
+}
+
+.dropdown a {
+  display: flex;
+  align-items: center;
+}
+
+.dropdown a .react-icons {
+  margin-left: 5px;
+}

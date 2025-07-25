@@ -1,0 +1,43 @@
+/* src/Preschooler.css */
+.program-container {
+    padding: 40px;
+    text-align: center;
+    background-color: #f9f9f9;
+  }
+  
+  .program-container h1 {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .program-image {
+    width: 80%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 30px;
+  }
+  
+  .program-description {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .enroll-button {
+    background-color: #f27b8b;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .enroll-button:hover {
+    background-color: #f05b67;
+  }
+  

@@ -1,0 +1,80 @@
+/* General container styling */
+.teachers-container {
+    padding: 20px;
+    background-color: #fdf2e9; /* Light beige for a warm and welcoming feel */
+    text-align: center;
+  }
+  
+  /* Heading styling */
+  .teachers-heading {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    color: #ff6f61; /* Soft coral color */
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px #ffa07a; /* Light shadow for a playful look */
+  }
+  
+  /* Teacher list container */
+  .teachers-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  /* Individual teacher card */
+  .teacher-card {
+    background-color: #ffffff;
+    border: 2px solid #ff6f61;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .teacher-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Teacher photo styling */
+  .teacher-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 3px solid #ff6f61;
+  }
+  
+  /* Teacher name */
+  .teacher-name {
+    font-size: 1.5rem;
+    color: #333333;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  /* Teacher category */
+  .teacher-category {
+    font-size: 1.2rem;
+    color: #ff6f61;
+    font-style: italic;
+    margin-bottom: 10px;
+  }
+  
+  /* Teacher qualification */
+  .teacher-qualification {
+    font-size: 1rem;
+    color: #666666;
+    margin-bottom: 10px;
+  }
+  
+  /* Teacher bio */
+  .teacher-bio {
+    font-size: 0.9rem;
+    color: #555555;
+    line-height: 1.4;
+  }
+  

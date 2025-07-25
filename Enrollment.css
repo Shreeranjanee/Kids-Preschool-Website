@@ -1,0 +1,90 @@
+/* Enrollment Page Container */
+.enrollment-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Title */
+.enrollment-container h2 {
+    text-align: center;
+    color: #4a90e2;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Message after form submission */
+.message {
+    background-color: #dff0d8;
+    color: #3c763d;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Form Style */
+.enrollment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Form Group */
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #4a90e2;
+}
+
+/* Button Style */
+.submit-btn {
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #4a90e2;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #357ab7;
+}
+
+/* Input field and textarea styling */
+textarea {
+    resize: vertical;
+}
+
+/* Style for form inputs on focus */
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #4a90e2;
+}

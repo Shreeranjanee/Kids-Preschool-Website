@@ -1,0 +1,124 @@
+/* General Styling for the Toddler Program */
+.program-details {
+    background-color: #fdf2e9; /* Light beige for a warm feel */
+    padding: 30px;
+    border-radius: 10px;
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    animation: slideIn 1s ease-out; /* Slide-in animation */
+}
+
+/* Toddler Program Heading */
+.program-details h1 {
+    font-size: 2.5rem;
+    color: black; /* Rose Pink */
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-shadow: 2px 2px #ffa07a; /* Light shadow for playful effect */
+    animation: fadeIn 2s ease-out;
+}
+
+/* Toddler Program Image */
+.program-image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect for the image */
+.program-image:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Program Description Paragraphs */
+.program-details p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    animation: fadeInUp 2s ease-out;
+}
+
+/* Call to Action Button */
+.cta-button {
+    background-color: #ff6f61; /* Soft Coral */
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Button Hover Effect */
+.cta-button:hover {
+    background-color: #e76f51; /* Darker Coral */
+}
+
+/* Slide-In Animation */
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Fade-In Animation for Heading */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Fade-In Up Animation for Paragraphs */
+@keyframes fadeInUp {
+    0% {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .program-details {
+        width: 90%;
+    }
+    
+    .program-image {
+        max-width: 100%;
+    }
+
+    .cta-button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .program-details {
+        padding: 20px;
+    }
+
+    .cta-button {
+        padding: 12px 20px;
+    }
+}

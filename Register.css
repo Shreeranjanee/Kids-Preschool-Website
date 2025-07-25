@@ -1,0 +1,85 @@
+/* General styling for the register page */
+.register-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, #ffe4e1, #ffb6c1);
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    color: #ff6f61;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Form Styling */
+  .register-form {
+    width: 100%;
+    max-width: 400px;
+    background: white;
+    padding: 30px; /* Increased padding for more space */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box; /* Ensure padding doesn't affect total width */
+  }
+  
+  .form-group {
+    margin-bottom: 20px; /* Add extra space between fields */
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px; /* Improved spacing between label and input */
+    color: #333;
+    font-weight: bold;
+  }
+  
+  input {
+    width: 100%;
+    padding: 12px; /* Increased padding inside the input field */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box; /* Ensure consistent box-sizing */
+  }
+  
+  input:focus {
+    border-color: #ff6f61;
+    outline: none;
+    box-shadow: 0 0 4px rgba(255, 111, 97, 0.5);
+  }
+  
+  /* Error Message */
+  .error-message {
+    color: red;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  /* Register Button */
+  .register-button {
+    width: 100%;
+    padding: 12px; /* Increased padding for a larger button */
+    background: #ff6f61;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  .register-button:hover {
+    background: #e75446;
+    transform: scale(1.05);
+  }
+  
+  /* Add spacing around the container for better alignment */
+  .register-container {
+    padding: 20px; /* Ensures the form isn't cramped */
+  }
+  

@@ -1,0 +1,128 @@
+.about-us {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    padding: 20px;
+    background-color: #fdf4e3; /* Light beige background */
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .about-header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #efdcd0; /* Bright orange */
+    color: white;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    display: center;
+    margin: 0 auto; /* Center the box */
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .about-header h1 {
+    font-size: 3rem;
+    
+    color: teal; /* Coral */
+  }
+  
+  .about-header p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-top: 10px;
+  }
+  
+  .about-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  
+  .about-section.reverse {
+    flex-direction: row-reverse;
+  }
+  
+  .about-content {
+    flex: 1;
+    padding: 20px;
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 0.8s ease-in-out;
+  }
+  
+  .about-content h2 {
+    font-size: 2rem;
+    color: #ff7f50; /* Coral */
+    margin-bottom: 15px;
+    font-weight: italic;
+  }
+  
+  .about-content p {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .about-image {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: all 0.8s ease-in-out;
+  }
+  
+  .about-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Sliding animations */
+  .slide-in-left {
+    animation: slideInLeft 0.8s forwards;
+  }
+  
+  .slide-in-right {
+    animation: slideInRight 0.8s forwards;
+  }
+  
+  @keyframes slideInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slideInRight {
+    from {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .about-section {
+      flex-direction: column;
+    }
+  
+    .about-section.reverse {
+      flex-direction: column;
+    }
+  
+    .about-image,
+    .about-content {
+      transform: none; /* Adjust for smaller screens */
+      opacity: 1;
+      animation: none;
+    }
+  }
+  

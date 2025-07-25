@@ -1,0 +1,57 @@
+/* App.css */
+
+/* Gallery container */
+.gallery {
+  text-align: center;
+  margin: 20px;
+}
+
+.gallery h2 {
+  font-size: 2rem;
+  color: #4CAF50;
+  margin-bottom: 20px;
+  font-family: 'Comic Sans MS', sans-serif;
+  animation: fadeIn 2s ease-in-out;
+}
+
+/* Gallery grid */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  justify-items: center;
+  animation: slideIn 2s ease-out;
+}
+
+/* Gallery images */
+.gallery-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
